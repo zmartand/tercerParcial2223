@@ -1,7 +1,7 @@
 package org.example;
 
 public class Principal {
-    public void principal() {
+    public void menu() {
 
         //Crear barcos
         Ship ship1 = new Ship("Ship1", 1, 1, 1);
