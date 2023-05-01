@@ -92,5 +92,12 @@ public class ShipGraph {
     private double calculateDistance(Ship ship1, Ship ship2) {
         return Math.sqrt(Math.pow(ship1.getX() - ship2.getX(), 2) + Math.pow(ship1.getY() - ship2.getY(), 2));
     }
+    public boolean hasLink(Ship ship1, Ship ship2) {
+        Set<Ship> adjacents1 = shipAdjacencyList.get(ship1);
+        if (adjacents1.contains(ship2)) {
+            return true;
+        }
+        return false;
+    }
 }
 
