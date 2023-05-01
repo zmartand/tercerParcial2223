@@ -1,7 +1,8 @@
 package org.example;
 
 public class Principal {
-    public static void main(String[] args) {
+    public void principal() {
+
         //Crear barcos
         Ship ship1 = new Ship("Ship1", 1, 1, 1);
         Ship ship2 = new Ship("Ship2", 2, 2, 2);
@@ -60,3 +61,5 @@ public class Principal {
 
     }
 }
+
+
